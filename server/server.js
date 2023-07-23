@@ -27,7 +27,6 @@ app.get("/api/v1/getRestarunts", async (req,res)=>{
 })
  //get single restaurant
 app.get("/api/v1/getRestarunts/:id",async (req,res)=>{
-    
    
     try{
         const result = await db.query('SELECT * FROM restaurants WHERE id = $1', [req.params.id])
