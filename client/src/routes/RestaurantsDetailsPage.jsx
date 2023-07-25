@@ -15,7 +15,7 @@ const RestaurantDetailPage = () => {
     const fetchData = async () => {
       try {
         const response = await RestaurantFinder.get(`/${id}`);
-
+        console.log(response);
         setSelectedRestaurant(response.data.data);
       } catch (err) {
         console.log(err);
@@ -31,6 +31,7 @@ const RestaurantDetailPage = () => {
           <div className="mt-3">
             <Reviews reviews={selectedRestaurant.reviews} />
           </div>
+
           <AddReview />
         </>
       )}

@@ -4,7 +4,7 @@ const Header = () => {
   return (
     <div>
       <h1 className="font-weight-light display-1 text-center">
-        Reastaurant Finder
+        Vini's Restaurant Review
       </h1>
     </div>
   );
